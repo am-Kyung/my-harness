@@ -1,0 +1,28 @@
+# 허들링 앱 화면 설계 하네스 — 기본 파라미터
+# rules.yaml(통과/실패 조건)과 분리해, 조정 가능한 수치·경로 기본값만 모아둔다.
+
+frame:
+  width: 390
+  height: 844
+
+key_screen_count:
+  min: 2
+  max: 3
+  frame_name_template: "{target_screen} - Key Screen {n}"
+
+reference_urls:
+  min: 2
+  max: 5
+
+run_folder_template: "runs/{target_screen}/"
+
+artifact_filenames:
+  insights: "01-insights.md"
+  design_doc: "02-design-doc.md"
+  figma_refs: "figma-refs.md"
+  figma_tokens_used: "figma-tokens-used.json"
+  state: "03-state.json"
+
+trigger:
+  command_form: '/run-harness "<target_screen>" <url1> <url2> ...'
+  natural_language_example: "OO 화면 설계 시작해줘, 레퍼런스는 ..."

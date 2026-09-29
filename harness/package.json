@@ -1,0 +1,13 @@
+{
+  "name": "huddling-design-harness",
+  "version": "1.0.0",
+  "private": true,
+  "description": "허들링 앱 화면 설계 하네스 게이트 판정 스크립트",
+  "scripts": {
+    "check:g1": "node scripts/check_g1.js",
+    "check:g3": "node scripts/check_g3.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
